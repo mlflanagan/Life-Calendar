@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <title>Life Calendar</title>
+    <meta charset="utf-8">
+    <style>
+        #main-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #title {
+            font-size: 2em;
+        }
+
+        #quote {
+            margin: 1em auto;
+            font-style: italic;
+        }
+
+        .age {
+            display: inline-block;
+            margin-right: 5px;
+            width: 1.5em;
+            text-align: right;
+            font-family: sans;
+        }
+
+        .box, .box-dark {
+          width: 10px;
+          height: 10px;
+          border: 1px solid black;
+          display: inline-block;
+        }
+
+        .box-dark {
+          background-color: darkgray;
+        }
+
+        .box:not(:last-child),
+        .box-dark:not(:last-child) {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div id="title">Memento mori!</div>
+        <div id="quote"></div>
+        <div id="box-container"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
